@@ -1,0 +1,265 @@
+/*
+ ** UltraCart - Wordpress Plugin
+ ** http://www.ultracart.com/
+ ** Copyright (c) 2016 BPS Info Solutions Inc.  All rights reserved.
+ */
+
+.uc-item {
+	clear: both;
+	margin-bottom: spacing();
+
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.error {
+		color: red;
+	}
+
+	section {
+		box-sizing: border-box;
+
+		.ultraslider-medium-holder {
+			margin: 0 auto;
+		}
+
+		&.uc-item-images {
+			padding: 0 spacing();
+			width: 100%;
+			float: left;
+
+			@media only screen and (min-width: $medium-breakpoint) {
+				width: 50%;
+			}
+
+			@media only screen and (min-width: $large-breakpoint) {
+				width: 33%;
+			}
+
+			.uc-item-mobile {
+				width: 100%;
+				height: 100%;
+				display: inline;
+
+				@media only screen and (min-width: $medium-breakpoint) {
+						display: none;
+				}
+			}
+
+			.uc-item-desktop {
+				width: 100%;
+				height: 100%;
+				display: none;
+
+				@media only screen and (min-width: $medium-breakpoint) {
+					display: inline;
+				}
+			}
+		}
+
+		&.uc-item-info {
+			padding: 0 spacing();
+			width: 100%;
+			float: right;
+
+			@media only screen and (min-width: $medium-breakpoint) {
+				width: 50%;
+			}
+
+			@media only screen and (min-width: $large-breakpoint) {
+				width: 66%;
+			}
+
+			&.uc-item-no-gallery {
+				padding: 0;
+				float: none;
+
+				@media only screen and (min-width: $medium-breakpoint) {
+					width: 100%;
+				}
+
+				@media only screen and (min-width: $large-breakpoint) {
+					width: 100%;
+				}
+			}
+
+			h1 {
+				font-weight: bold;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-bottom: spacing(.5);
+			}
+
+			.uc-item-price {
+				margin-bottom: spacing();
+
+				//.uc-price-sale {
+				//	display: none;
+				//}
+
+				//&.uc-sale {
+				//
+				//	.uc-price {
+				//		color: $color-grey-lighter;
+				//		text-decoration: line-through;
+				//	}
+				//
+				//	.uc-price-sale {
+				//		display: inline;
+				//		font-weight: bold;
+				//	}
+				//}
+			}
+
+			.uc-item-description {
+				margin-bottom: spacing();
+				p {
+					margin-bottom: spacing(.5);
+				}
+			}
+
+			.uc-item-variants {
+				margin-bottom: spacing();
+
+				.uc-item-variant {
+					display: block;
+					clear: both;
+					margin-bottom: spacing(.25);
+
+					.uc-item-variant-label {
+						margin-right: spacing(.25);
+						font-weight: bold;
+					}
+				}
+
+				&-selector-wrapper {
+					label {
+						padding-right: spacing(.25);
+					}
+				}
+			}
+
+			.uc-item-options {
+				margin-bottom: spacing();
+
+				.uc-item-option {
+					clear: both;
+					display: block;
+					margin-bottom: spacing(.5);
+
+					.uc-item-option-label {
+						display: inline-block;
+						margin-right: spacing(.25);
+						margin-bottom: spacing(.25);
+						font-weight: bold;
+					}
+
+					.uc-option-value {
+						display: block;
+						width: 100%;
+						clear: both;
+
+						li {
+							margin-bottom: spacing(.25);
+						}
+					}
+
+					ul.uc-option-value,
+					textarea.uc-option-value {
+						display: block;
+					}
+				}
+			}
+
+			.uc-item-auto-order-schedules {
+				margin-bottom: spacing();
+
+				.uc-item-auto-order-schedule {
+					display: block;
+					margin-bottom: spacing(.5);
+
+					.uc-item-auto-order-schedule-label {
+						display: inline-block;
+						margin-right: spacing(.25);
+						margin-bottom: spacing(.25);
+						font-weight: bold;
+					}
+					.uc-item-auto-order-schedule-value {
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+
+			.uc-item-add {
+
+				@media only screen and (min-width: $medium-breakpoint) {
+					display: flex;
+					align-items: flex-end;
+					justify-content: space-between;
+				}
+
+				.uc-qty {
+					margin-bottom: spacing(.5);
+
+					@media only screen and (min-width: $medium-breakpoint) {
+						margin-bottom: 0;
+					}
+
+					span {
+						font-weight: bold;
+						display: inline-block;
+						margin-right: spacing(.25);
+					}
+
+					.uc-input-qty {
+						width: 40px;
+						padding: 5px;
+					}
+				}
+
+				.uc-add-btn {
+					width: 100%;
+					min-width: 150px;
+
+					@media only screen and (min-width: $medium-breakpoint) {
+						max-width: 50%;
+						margin-bottom: 0;
+					}
+
+					@media only screen and (min-width: $large-breakpoint) {
+						max-width: 60%;
+						margin-bottom: 0;
+					}
+
+					.uc-add-to-cart {
+						width: 100%;
+						margin-bottom: spacing();
+					}
+				}
+			}
+		}
+	}
+}
+
+.uc-sale {
+
+	.uc-price {
+		color: $color-grey-lighter;
+		text-decoration: line-through;
+	}
+
+	.uc-price-sale {
+		display: inline;
+		font-weight: bold;
+	}
+}
+
+.uc-add-to-cart {
+	margin-bottom: spacing(.5);
+}
+
+

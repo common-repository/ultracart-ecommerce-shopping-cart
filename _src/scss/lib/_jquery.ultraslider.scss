@@ -1,0 +1,178 @@
+/*
+ ** UltraCart - Wordpress Plugin
+ ** http://www.ultracart.com/
+ ** Copyright (c) 2016 BPS Info Solutions Inc.  All rights reserved.
+ */
+
+.ultraslider-thumbnail-wrapper {
+    position: relative;
+}
+
+.ultraslider-medium-holder {
+    margin: 0 auto;
+    cursor: pointer;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ultraslider-medium-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #c2c2c2;
+}
+
+.ultraslider-thumbnail-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ultraslider-thumbnail-list-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ultraslider-thumbnail-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.ultraslider-thumbnail-list-container ul li {
+    float: left;
+    margin: 5px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.ultraslider-thumbnail-list-container ul li.ultraslider-active {
+    border: 1px solid #c2c2c2;
+}
+
+.ultraslider-thumbnail-list-container ul li img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+.ultraslider-thumbnail-list-container ul li img.preload {
+    display: none;
+}
+
+.ultraslider-thumbnail-container.ultraslider-noscrolling {
+    text-align: center;
+}
+
+.ultraslider-noscrolling .ultraslider-thumbnail-list-container {
+    left: initial !important;
+    top: initial;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.ultraslider-noscrolling .ultraslider-thumbnail-list-right,
+.ultraslider-noscrolling .ultraslider-thumbnail-list-left {
+    display: none;
+}
+
+div.ultraslider-thumbnail-list-left,
+div.ultraslider-thumbnail-list-right {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+}
+
+.ultraslider-thumbnail-list-left {
+    left: -10px;
+    //top: 0;
+}
+
+.ultraslider-thumbnail-list-right {
+    right: -10px;
+    //top: 0;
+}
+
+.ultraslider-thumbnail-list-left:before,
+.ultraslider-thumbnail-list-right:before {
+    content: ">";
+    display: block;
+    margin-top: -12px;
+    margin-left: -5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-indent: 0;
+    color: #626262;
+}
+
+.ultraslider-thumbnail-list-left:before {
+    content: "<";
+}
+
+.ultraslider-paging-holder {
+    text-align: center;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ultraslider-paging-holder ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.ultraslider-paging-holder li {
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ultraslider-paging-holder li span {
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    margin: 0;
+    display: block;
+    height: 10px;
+    width: 10px;
+    outline: 0;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.ultraslider-paging-holder li.ultraslider-active span {
+    background-color: #eaeaea;
+    border-color: #c2c2c2;
+}

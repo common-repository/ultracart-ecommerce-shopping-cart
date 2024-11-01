@@ -1,0 +1,49 @@
+/*
+ ** UltraCart - Wordpress Plugin
+ ** http://www.ultracart.com/
+ ** Copyright (c) 2016 BPS Info Solutions Inc.  All rights reserved.
+ */
+
+/*
+ ** Description - Fly-out cart that lives off-screen until you need it.
+ ** Where: Every Page, but off screen.
+ */
+
+/* Settings - localize the global vars.
+----------------------------------------------------------------------------------------------------------------------*/
+
+/* Style Guide - Custom Alert
+----------------------------------------------------------------------------------------------------------------------*/
+
+.uc-custom-alert {
+    position: fixed;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10000;
+
+	.uc-custom-alert-content {
+		position: fixed;
+	    width: 450px;
+	    left: 50%;
+	    top: 25%;
+	    margin-left: -225px;
+        padding: 20px;
+	    background-color: white;
+	    border-radius: 5px;
+	    text-align: center;
+	    opacity: 0;
+	    transform: scale(0.75);
+	    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+	}
+
+	&.active {
+		.uc-custom-alert-content {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}

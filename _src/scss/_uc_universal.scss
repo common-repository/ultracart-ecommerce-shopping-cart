@@ -1,0 +1,74 @@
+/*
+ ** UltraCart - Wordpress Plugin
+ ** http://www.ultracart.com/
+ ** Copyright (c) 2016 BPS Info Solutions Inc.  All rights reserved.
+ */
+
+$color-black						: #000000;
+$color-white						: #FFFFFF;
+
+$color-grey-lightest		: #eaeaea;
+$color-grey-lighter 		: #999999;
+$color-grey-light   		: #666666;
+$color-grey         		: #333333;
+$color-grey-med     		: #222222;
+$color-grey-dark    		: #1c1c1c;
+$color-grey-darker  		: #1a1a1a;
+
+$color-facebook					: #3b5998;
+$color-instagram				: #3f729b;
+$color-google-plus			: #dd4b39;
+$color-twitter					: #55acee;
+
+$font-default-size			: 16px;
+$font-line-height				: 1.5;
+
+$medium-breakpoint			: 641px;
+$large-breakpoint				: 1025px;
+
+@function spacing($multiplier: 1){
+	$space : 32px !default;
+	@return round($space * $multiplier);
+}
+
+// On a light background
+$button-border-color			: $color-grey;
+$button-bg-color					: $color-white;
+$button-font-color				: $color-grey;
+$button-hover-font-color	: $color-white;
+$button-hover-bg-color		: $color-grey;
+
+.uc-safeplace {
+	.uc-button {
+	    display: inline-block;
+		padding: spacing(.25);
+		border: 1px solid $color-grey;
+		color: $button-font-color;
+		background: $button-bg-color;
+		white-space: nowrap;
+		border-radius: inherit;
+	    margin-bottom: 16px;
+	    font-size: 16px;
+	    line-height: 22px;
+
+		transition: background 500ms ease-in-out, color 500ms ease-in-out;
+
+		&:hover {
+			background: $color-grey;
+			color: $color-grey-lightest;
+		}
+	}
+
+	.clearfix::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+.ecommerce-by-uc {
+	text-align: center;
+	margin: 10px 0;
+	color: $color-grey-dark;
+	font-size: 12px;
+}

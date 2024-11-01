@@ -1,0 +1,118 @@
+/*
+ ** UltraCart - Wordpress Plugin
+ ** http://www.ultracart.com/
+ ** Copyright (c) 2016 BPS Info Solutions Inc.  All rights reserved.
+ */
+
+.btn-add-shortcode {
+  background: #30b2d6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-cancel-shortcode {
+  background: #999;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+.selectize-dropdown .selectize-dropdown-content .uc-selectize-option .image-wrapper img {
+  margin-right: 10px;
+}
+
+.selectize-dropdown .selectize-dropdown-content .uc-selectize-option .id-description-wrapper {
+
+}
+
+.id-description-wrapper .description {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.id-description-wrapper .itemId {
+  font-size: 12px;
+  color: #999;
+}
+
+body .selectize-dropdown {
+  z-index: 1000000;
+}
+
+body .selectize-dropdown-content {
+  max-height: 500px;
+}
+
+.thickbox-loading select.currency-conversion-select {
+  border: 1px solid #d0d0d0;
+  padding: 8px 8px;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 18px;
+  height: 36px;
+  margin-bottom: 20px;
+}
+
+.ucwp_enable_ultracart_analytics_recording_label {
+  margin-left: 20px;
+}
+.ucwp_enable_ultracart_analytics_recording_label.disabled {
+  color: #999;
+}
+
+.editor-styles-wrapper .ucwp-itemid-field p.components-base-control__help {
+  margin-top: 0;
+}
+.ucwp-itemid-field .selectize-control {
+  padding: 0;
+}
+.ucwp-itemid-field .selectize-control .selectize-input.items {
+  display: block;
+  /*height: 30px;*/
+  padding: 6px 8px;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow .1s linear;
+  border-radius: 2px;
+  border: 0;
+  /*border-radius: 4px;*/
+  /*border: 1px solid #8d96a0;*/
+  font-size: 16px;
+  line-height: 18px;
+  background-image: none;
+  background-color: white;
+}
+
+.ucwp-itemid-field .selectize-control .selectize-input.items.input-active {
+  display: block;
+  color: #191e23;
+  border-color: #00a0d2;
+  box-shadow: 0 0 0 1px #00a0d2;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.ucwp-select-field.components-base-control select.components-select-control__input {
+  max-width: 100%;
+}
+.ucwp-checkbox-field.components-base-control .components-base-control__label {
+  display: block;
+}

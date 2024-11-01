@@ -1,0 +1,29 @@
+{
+  "name": "uc-wp",
+  "version": "1.0.0",
+  "description": "UltraCart Wordpress Plugin",
+  "main": "Gruntfile.js",
+  "path": {
+    "npm": "node_modules/",
+    "build": "_src/",
+    "assets": "assets/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "csswring": "^5.1.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-zip": "^0.17.1",
+    "jshint-stylish": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh York",
+  "license": "ISC"
+}

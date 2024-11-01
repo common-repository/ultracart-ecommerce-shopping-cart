@@ -1,0 +1,70 @@
+/************ ITEMIMAGEGALLERY *************/
+.widget-itemimagegallery {
+  z-index: 1;
+}
+
+body.ultraslider-lightbox-open {
+  overflow: hidden;
+}
+
+body.ultraslider-lightbox-open #storefrontAdminContainer {
+  display: none !important;
+}
+
+.ultraslider-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999999;
+}
+
+.ultraslider-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.ultraslider-lightbox-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #363636;
+  color: white;
+  cursor: pointer;
+}
+
+.ultraslider-lightbox-left-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 20px;
+  padding: 10px 15px;
+  background-color: #363636;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.ultraslider-lightbox-right-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #363636;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
